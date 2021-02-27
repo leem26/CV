@@ -3,6 +3,18 @@
 \usepackage{parskip}
 \usepackage{changepage}
 \usepackage{booktabs}
+\usepackage{url} 
+\usepackage{breakurl} % Broken links
+\usepackage{hyperref} 
+\usepackage{etoolbox}
+\usepackage[%
+backend=biber,
+style=numeric,
+citestyle=nature,
+bibstyle=nature
+]{biblatex}
+\addbibresource{pubs.bib}
+
 \begin{document}
 \name{\textbf{Matthew M. Lee}}
 \begin{center}
@@ -77,16 +89,8 @@ PI: Biljana Horn, MD; Robert Goldsby, MD
     \item \parskip 1pt Extracted patient medical records using EPIC EMR system and coordinated lab discussions and meetings.
 \end{itemize}
 
-\section{Publications}
-\begin{enumerate}
-    \item \textbf{Lee M}, Altman E, Madsen, KA. Secular trends in sugar-sweetened beverage consumption among adults, teens, and children: the California Health Interview Survey, 2011-2018. Preventing Chronic Disease. 2021. [In Press]
-    \item \parskip 1pt Ponce J, Yuan H, Schillinger D, Mahmood H, \textbf{Lee MM}, Falbe J, Daniels R, Madsen KA. Retailer Perspectives on Sugar-Sweetened Beverage Taxes in the California Bay Area. Preventive Medicine Reports. 2020;101129.
-    \item \parskip 1pt Falbe J, \textbf{Lee MM}, Kaplan S, Rojas NA, Ortega Hinojosa AM, Madsen KA. Higher Sugar-Sweetened Beverage Retail Prices After Excise Taxes in Oakland and San Francisco. Am J Public Health. 2020;e1–e7. 
-    \item \parskip 1pt Mujahid MS, Sohn EK, Izenberg J, Gao X, Tulier M, \textbf{Lee MM}, Yen IH. Gentrification and Displacement in the San Francisco Bay Area: A Comparison of Measurement Approaches. Int J Environ Res Public Health [electronic article]. 2019;16(12).
-    \item \parskip 1pt \textbf{Lee MM}, Falbe J, Schillinger D, Basu S, McCulloch C, Madsen K. Sugar-Sweetened Beverage Consumption 3 Years After the Berkeley, California, Sugar-Sweetened Beverage Tax. Am J Public Health. 2019;109(4):637–639. 
-    \item \parskip 1pt \textbf{Lee MM}, Falbe J, Madsen KA. Secular Trends in Soda Consumption, California, 2011-2016. Prev Chronic Dis. 2019;16.
-
-\end{enumerate}
+\nocite{*}
+\printbibliography[title=Publications]
 
 \section{Service}
 
