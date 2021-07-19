@@ -1,87 +1,128 @@
 \documentclass{cv_style}
-\usepackage[letterpaper, total={7.6in, 10in}]{geometry}
-\usepackage{parskip}
-\usepackage{changepage}
-\usepackage{booktabs}
-\usepackage{url} 
-\usepackage{breakurl} % Broken links
-\usepackage{hyperref} 
-\usepackage{etoolbox}
-\usepackage[%
-backend=biber,
-style=numeric,
-citestyle=nature,
-bibstyle=nature,
-sorting=ydnt
-]{biblatex}
-\addbibresource{pubs.bib}
-
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryBibitem{\clearfield{day}}
+\usepackage{enumitem}
 \begin{document}
 \name{\textbf{Matthew M. Lee}}
 \begin{center}
     \contact{665 Huntington Avenue}{Boston}{MA}{mlee8@g.harvard.edu}{(916) 642-3497}   
 \end{center}
 
-\begin{adjustwidth}{0.7cm}{0.7cm} \parskip 8pt \begin{small} \textsc{Summary:} I am a PhD student in Population Health Sciences at the Harvard T.H. Chan School of Public Health Department of Nutrition. My research interests are focused on policies and interventions related to food and the environment that improve cardiometabolic health. Most recently, I have worked to evaluate the impact of sugar-sweetened beverage excise taxes on consumption patterns in the San Francisco Bay Area.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{adjustwidth}{0.7cm}{0.7cm} \parskip 8pt \begin{small} \textbf{Summary:} I am a PhD student in Population Health Sciences at the Harvard T.H. Chan School of Public Health in Department of Nutrition. My professional interests are focused on policies and interventions related to food systems and the environment that improve cardiometabolic outcomes, as well as the application of novel causal inference and simulation-based methods to population health research. 
 \end{small}
 \end{adjustwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \parskip -5pt 
 \section{Education}
 \parskip -5pt
-\datedsubsection{\textbf{Harvard T.H. Chan School of Public Health}}{2019-}
-\parskip -4pt \noindent PhD, Population Health Science; Concentration: Public Health Nutrition
+% PhD Harvard
+\datedsubsection{\textbf{Harvard T.H. Chan School of Public Health}}{2019-Present}
+\parskip -4pt \noindent Doctor of Philosophy (PhD) in Population Health Science, Public Health Nutrition
+
+% Berkeley MS
 \datedsubsection{\textbf{University of California, Berkeley School of Public Health}}{2017-2019}
-\parskip -4pt M.S. Epidemiology \\
-  \hangindent=0.7cm \rightskip=1cm \textsc{Thesis}: \textit{Maintenance of Reductions in Sugar-Sweetened Beverage Consumption, \newline Three Years After a Sugar-Sweetened Beverage Tax}
+\parskip -4pt Master of Science (MS) in Epidemiology \\
+    \vspace{-1em}
+    \begingroup
+    \addtolength{\leftmargini}{3em} \begin{itemize}
+        \item[\hspace{1em}Thesis:] \text{\textit{Sugar-Sweetened Beverage Consumption 3 Years After the Berkeley, California, Sugar-Sweetened Beverage Tax}}
+    \end{itemize}
+    \endgroup
 \parskip -8pt  
+
+% Berkeley BA
 \datedsubsection{\textbf{University of California, Berkeley}}{2012-2016}
-\parskip -4pt \noindent B.A. Public Health, \textsc{Minors:} Global Poverty and Practice, Music
+\parskip -4pt \noindent  Bachelor of Arts (BA) in Public Health, \textsc{Minors:} Global Poverty and Practice, Music
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEACHING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \parskip -5pt 
 \section{Teaching}
-\datedsubsection{\textbf{Teaching Fellow, Population Health Sciences 2000}}{2020-2021}
+
+% PHS 2000A/B
+\datedsubsection{\textbf{Teaching Fellow, Population Health Sciences 2000 A/B}}{2020-2021}
 \textit{Harvard Graduate School of Arts and Sciences}
 \begin{itemize}
   \vspace{0em} \item Year-long core course for first-year PhD students in the Population Health Sciences doctoral program, covering concepts in sampling, estimation and statistical inference for regression models, model selection, survival and longitudinal analyses, measurement error, causal inference and mediation, and econometrics. 
-  \item \parskip 1pt Led lab sessions and office hours with original lecture slides including applications using \texttt{R} programming language, development and grading of homework and exam assessments, and a primary role in course evaluation and refinement.  
+  \item \parskip 1pt Led lab sessions and weekly office hours with original lecture slides including applications using the \texttt{R} programming language, development and grading of homework and exam assessments, and primary role in course evaluation and refinement during transition to online/virtual learning.  
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Honors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace {-.8em} 
+\section{Honors}
+
+\textit{Certificate of Distinction in Teaching, Derek Bok Center for Teaching and Learning (Harvard University)} \hfill {2020}\\
+\textit{Simon, Arpi, and Marie Simonian Research Excellence in Nutrition Prize (Harvard University)} \hfill {2020}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\parskip -5pt 
+\nocite{*}
+\printbibliography[title=Publications]
+
+\vspace{1em} \textbf{Note:} $^\dagger$ denotes co-first authorship
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Work \& Research Experience}
-\datedsubsection{\textbf{Research Assistant}}{2020-}
+
+% Kenney
+\datedsubsection{\textbf{Research Assistant}}{2020-Present}
+\textit{Harvard T.H. Chan School of Public Health, Department of Nutrition} \\
+PI: Erica Kenney, ScD, MPH
+\begin{itemize}
+    \item Led and supported data analysis, code review, and manuscript development and editing for projects related to nutrition policies aimed at addressing childhood obesity, improving food access, and reducing food insecurity -- including evaluations of US nutrition assistance programs, of the Philadelphia, PA, sugary beverage excise tax, and of racial/ethnic disparities in food-related advertising to young children and their families.
+\end{itemize}
+
+% CHOICES
+\datedsubsection{\textbf{Research Assistant}}{2020-Present}
 \textit{Harvard T.H. Chan School of Public Health, Department of Social and Behavioral Sciences} \\
 The Childhood Obesity Intervention Cost-Effectiveness Study (CHOICES)
 \begin{itemize}
-    \item Supported cost-effectiveness analyses related to various policy interventions and long-run impacts on child obesity outcomes, including analysis of nationally representative data sources such as the National Health and Nutrition Examination Survey and the California Health Interview Survey, building and running microsimulation models, and validation of results against empirical data from.
+    \item Supported microsimulation-based cost-effectiveness analyses related to US policy interventions and their potential long-run impacts on child and adult outcomes, including health care spending, obesity, morbidity, and mortality. Analyzed dietary and health data from representative samples including the National Health and Nutrition Examination Survey, ran and synthesized output from simulation models, validated estimates against empirical data, and developed methods to streamline post-processing of results.
 \end{itemize}
 
+% UCB Madsen
 \datedsubsection{\textbf{Graduate Researcher}}{2017-2019}
 \textit{UC Berkeley School of Public Health Division of Community Health Sciences} \\
 PI: Kristine Madsen, MD, MPH
 \begin{itemize}
-    \item Managed evaluation of sugar-sweetened beverage (SSB) taxes in Oakland, Berkeley, and San Francisco to assess the relationship between implementation and beverage consumption, using a quasi-experimental difference-in-differences design. In total for 2018, gathered information from 2800 individuals, 160 stores, and 60 store owners across 5 cities with ongoing work being done in Berkeley on retailer perceptions of the tax.
-    \item \parskip 1pt Supported analysis for \textit{The Fit Study}, a three year cluster-randomized trial on the effect of BMI screening and reporting on child obesity outcomes. Examined the accuracy of parent perception of child weight status by treatment arm.
-    \item \parskip 1pt Pulled and cleaned data from the California Department of Education, American Community Survey, and Decennial Census to merge with geospatial data for ancillary work examining the role of target marketing of SSB's and a project examining spillover effects of Physical Education related lawsuits on district PE policies in California.
-    \item \parskip 1pt Managed and coordinated data collection and entry. Cleaned and analyzed data using Stata and R.
-    \item \parskip 1pt Primary role in manuscript development, writing, and submission.
+    \item Managed evaluation of sugar-sweetened beverage (SSB) taxes in Oakland, Berkeley, and San Francisco to assess the relationship between implementation and beverage consumption, using a quasi-experimental difference-in-differences design. Supported analysis for \textit{The Fit Study}, a three year cluster-randomized trial on the effects of BMI screening and reporting. Oversaw data collection, entry, analysis, and manuscript development and submission.
+    \item \parskip 1pt Produced spatial data cross-linked with information from the California Department of Education, American Community Survey, and US Census for projects examining the role of targeted marketing of SSBs and the spillover effects of Physical Education related lawsuits on district PE policies in California.
 \end{itemize}
 
+% UCB Mujahid/Bradshaw
 \datedsubsection{\textbf{Staff Research Associate}}{2016-2017}
 \textit{UC Berkeley School of Public Health Division of Epidemiology} \\
 PI: Mahasin Mujahid, PhD, MS; Patrick Bradshaw, PhD, MS
 \begin{itemize}
-    \item Managed components of research projects including literature review, Institutional Review Board (IRB) approval, accounting and finance reporting, data management, manuscript preparation and submission, and grant proposals.
-    \item \parskip 1pt Teaching support for Public Health 150A, "Introduction to Epidemiology and Human Disease", including lecture content preparation, exam grading, and exam proctoring.
+    \item Managed research portfolio, including background literature reviews, Institutional Review Board (IRB) and ethics approval and documentation, accounting and finance reporting, data management, manuscript preparation and submission, and grant proposals. Provided teaching support for undergraduate-level Epidemiologic Methods course.
 \end{itemize}
 
+% UCB Mujahid/Carly
 \datedsubsection{\textbf{Research Assistant}}{2015-2016}
 \textit{UC Berkeley School of Public Health Division of Epidemiology} \\
 PI: Mahasin Mujahid, PhD, MS
 \begin{itemize}
-    \item Completed detailed literature review for project examining the impact of community change initiatives on neighborhood collective efficacy; coded, transcribed, and analyzed qualitative data using Atlas.ti.
-    \item \parskip 1pt Established codebook and developed theory of change models.
+    \item Completed detailed literature review on the impact of community change initiatives on neighborhood collective efficacy. Coded, transcribed, and analyzed qualitative data using Atlas.ti.
 \end{itemize}
 
+% UCSF Horn/Goldsby
 \datedsubsection{\textbf{Research Assistant}}{2014-2015}
 \textit{UC San Francisco Pediatric Hematology \& Oncology} \\
 PI: Biljana Horn, MD; Robert Goldsby, MD
@@ -90,37 +131,49 @@ PI: Biljana Horn, MD; Robert Goldsby, MD
     \item \parskip 1pt Extracted patient medical records using EPIC EMR system and coordinated lab discussions and meetings.
 \end{itemize}
 
-\nocite{*}
-\printbibliography[title=Publications]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Service}
 
+% Union
+\datedsubsection{\textbf{Union Steward}}{2020-Present}
+\textit{Harvard Graduate Student Union}
+\begin{itemize}
+    \item Supported department- and university-level organizing efforts to assess student needs, gauge contract priorities, and build social support amongst incoming and continuing doctoral students in the School of Public Health. 
+\end{itemize}
+
+% Suitcase Clinic
 \datedsubsection{\textbf{Executive Director / Housing and Employment Coordinator}}{2013-2015}
 \textit{The Suitcase Clinic}
 \begin{itemize}
-    \item Oversaw all volunteers, committees, and clinics aimed at providing health and social services to homeless and low-income populations in the Bay Area.
-    \item \parskip 1pt Built and maintained relationships with partners including The City of Berkeley and Berkeley Free Clinic, worked effectively to secure \$40,000 in funding, and initiated process for attaining 501(c)3 status.
-    \item \parskip 1pt Initiated data collection and electronic services database to bolster institutional memory, and created stable budget and accounting process.
-    \item \parskip 1pt As Housing and Employment Coordinator, worked with clients to prepare applications for Section 8 housing, identify shelter resources, and reviewed resumes and application materials for job interviews. 
+    \item Oversaw all volunteers, committees, and clinics aimed at providing health and social services to homeless and low-income populations in the Bay Area, including a course on issues on homelessness for UC Berkeley  students. 
+    \item \parskip 1pt Built and maintained relationships with partners including The City of Berkeley and Berkeley Free Clinic, worked effectively to secure \$40,000 in funding, and initiated process for attaining 501(c)3 status. Initiated data collection and electronic services database to bolster institutional memory, and created stable budget and accounting process.
 \end{itemize}
 
-
+% GPP Fellow
 \datedsubsection{\textbf{Global Poverty and Practice Fellow}}{2015}
 \textit{Makikita Quykuway}
 \begin{itemize}
-    \item Completed an internship at Makikita Quykuway, an NGO dedicated to alleviating health and resource disparities in peri-urban settlements in Peru, as a recipient of the Global Poverty and Practice Fellowship from the Blum Center for Developing Economies.
-    \item \parskip 1pt Conducted non-profit program evaluation and developed health education materials, worked in health clinics and child labor reduction interventions.
+    \item Completed internship at Makikita Quykuway, a non-governmental organization dedicated to alleviating health and resource disparities in peri-urban informal settlements in Peru, as a recipient of the Global Poverty and Practice Fellowship from the Blum Center for Developing Economies at UC Berkeley.
+    \item \parskip 1pt Conducted non-profit program evaluation and developed health education materials, worked in health clinics and supported child labor reduction interventions.
 \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
 \begin{itemize}
-    \item Statistical Packages (R, Stata, SAS, Python)
+    \item Statistical Packages (R, Stata, SAS, Python, Stan)
     \item \parskip 1pt Geographic Information Systems (R)
-    \item \parskip 1pt \LaTeX
+    \item \parskip 1pt \LaTeX \ typesetting
     \item \parskip 1pt Qualitative analysis software (Atlas.ti)
     \item \parskip 1pt Version control (Google Drive Suite, Box, Git/Github)
-    \item \parskip 1pt Qualtrics Survey Design
-    \item \parskip 1pt Citation Software (Endnote, Refworks, Zotero)
+    \item \parskip 1pt Survey Design (Qualtrics, Google Forms)
+    \item \parskip 1pt Reference Management Software (Endnote, Refworks, Zotero, Mendeley)
     \item \parskip 1pt Microsoft Office (Word, PowerPoint, Excel)
     \item \parskip 1pt Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere, Lightroom, Bridge)
 \end{itemize}
