@@ -2,17 +2,23 @@
 \AtEveryBibitem{\clearfield{month}}
 \AtEveryBibitem{\clearfield{day}}
 \usepackage{enumitem}
+\hypersetup{
+  colorlinks = true,
+  linkcolor = blue,
+  urlcolor = blue,
+  citecolor = blue
+}
 \begin{document}
 \name{\textbf{Matthew M. Lee}}
 \begin{center}
-    \contact{665 Huntington Avenue}{Boston}{MA}{mlee8@g.harvard.edu}{(916) 642-3497}   
+    \contact{665 Huntington Avenue}{Boston}{MA}{mlee8@g.harvard.edu}{\href{https://mmlee.me}{https://mmlee.me}}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SUMMARY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{adjustwidth}{0.7cm}{0.7cm} \parskip 8pt \begin{small} \textbf{Summary:} I am a PhD student in Population Health Sciences at the Harvard T.H. Chan School of Public Health in Department of Nutrition. My professional interests are focused on policies and interventions related to food systems and the environment that improve cardiometabolic outcomes, as well as the application of novel causal inference and simulation-based methods to population health research. 
+\begin{adjustwidth}{0.7cm}{0.7cm} \parskip 8pt \begin{small} \textbf{Summary:} I am a PhD candidate in Population Health Sciences at the Harvard T.H. Chan School of Public Health in the Department of Nutrition. My professional interests are focused on policies and interventions related to food systems and the environment that improve cardiometabolic outcomes, as well as the application of novel causal inference and simulation-based methods to advance population health and health equity research.  
 \end{small}
 \end{adjustwidth}
 
@@ -40,7 +46,7 @@
 
 % Berkeley BA
 \datedsubsection{\textbf{University of California, Berkeley}}{2012-2016}
-\parskip -4pt \noindent  Bachelor of Arts (BA) in Public Health, \textsc{Minors:} Global Poverty and Practice, Music
+\parskip -4pt \noindent  Bachelor of Arts (BA) in Public Health, \textsc{Minors:} Global Poverty, Music
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% TEACHING
@@ -50,21 +56,36 @@
 \section{Teaching}
 
 % PHS 2000A/B
-\datedsubsection{\textbf{Teaching Fellow, Population Health Sciences 2000 A/B}}{2020-2021}
-\textit{Harvard Graduate School of Arts and Sciences}
+\datedsubsection{\textbf{Teaching Fellow, Population Health Sciences 2000 A/B}}{2020-2021, 2022}
+``Quantitative Research Methods in Population Health Sciences'' | \textit{Harvard Graduate School of Arts and Sciences}
 \begin{itemize}
   \vspace{0em} \item Year-long core course for first-year PhD students in the Population Health Sciences doctoral program, covering concepts in sampling, estimation and statistical inference for regression models, model selection, survival and longitudinal analyses, measurement error, causal inference and mediation, and econometrics. 
-  \item \parskip 1pt Led lab sessions and weekly office hours with original lecture slides including applications using the \texttt{R} programming language, development and grading of homework and exam assessments, and primary role in course evaluation and refinement during transition to online/virtual learning.  
+  \item \parskip 1pt Led lab sessions and weekly office hours with original lecture slides including applications using the R programming language, development and grading of homework and exam assessments, and primary role in course evaluation and refinement during transition to online/virtual learning. Lab lectures given included material on regression, measurement error, survival analysis, causal interaction and mediation, factor analysis, and meta-analysis.
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Honors
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace {-.8em} 
-\section{Honors}
+% SBS 203/204
+\datedsubsection{\textbf{Teaching Fellow, Social and Behavioral Sciences 203/204}}{2022}
+``Program Implementation and Evaluation'' | \textit{Harvard T.H. Chan School of Public Health}
+\begin{itemize}
+  \vspace{0em} \item Semester course on conducting community health needs assessment, program planning, implementation, and evaluation, with a particular emphasis on community engagement and applied research. Required for masters students in Social and Behavioral Sciences. Foci includes health-related intervention for individuals, communities, organizations, and local/national groups and the various challenges that researchers and practitioners encounter when conducting this work "on the ground". 
+  \item \parskip 1pt Facilitated in-class discussion on theoretical concepts and course materials, led lecture in cost effectiveness analysis and economic evaluation in the context of program planning, and provided critical feedback on student work, including a community health needs assessment and CDC \textit{Partnerships for Improving Community Health} grant application among others. 
+\end{itemize}
 
-\textit{Certificate of Distinction in Teaching, Derek Bok Center for Teaching and Learning (Harvard University)} \hfill {2020}\\
-\textit{Simon, Arpi, and Marie Simonian Research Excellence in Nutrition Prize (Harvard University)} \hfill {2020}
+% NUT 202
+\datedsubsection{\textbf{Teaching Fellow, Nutrition 202}}{2022}
+``The Biological Basis of Human Nutrition'' | \textit{Harvard T.H. Chan School of Public Health, Biological Sciences in Public Health}
+\begin{itemize}
+  \vspace{0em} \item Semester course on the biochemistry and metabolism of carbohydrates, fats, proteins, vitamins, and minerals in the context of human disease. Contemporary topics are emphasized. Particular emphasis is given to current knowledge of the mechanisms that may explain the role of diet in the causation and/or prevention of ischemic heart disease, diabetes, obesity, hypertension, and cancer. Required for masters and doctoral students in Nutrition.
+  \item \parskip 1pt Coordinated weekly guest lectures and held weekly office hour review sessions on course material, led lecture in iron and copper metabolism in the context of human nutrition and health, drafted and evaluated exam questions and facilitated course feedback.
+\end{itemize}
+
+% PHS 2000A/B Tutor
+\datedsubsection{\textbf{Tutor, Population Health Sciences 2000 A/B}}{2021-22}
+``Quantitative Research Methods in Population Health Sciences'' | \textit{Harvard Graduate School of Arts and Sciences}
+\begin{itemize}
+  \vspace{0em} \item Hosted weekly tutoring sessions for 2-3 first-year PhD students in Population Health Sciences to support learning in PHS 2000A and B (course description above), review concepts in preparation for exams, go over solutions and concepts from problem sets, and provide mentoring on additional classes and resources.
+\end{itemize}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PUBLICATIONS
@@ -73,7 +94,41 @@
 \nocite{*}
 \printbibliography[title=Publications]
 
-\vspace{1em} \textbf{Note:} $^\dagger$ denotes co-first authorship
+\vspace{2em}
+
+\textit{Reviewer for: PLOS ONE, BMC Public Health, Scientific Reports, Frontiers in Nutrition, Preventive Medicine Reports, Public Health, International Journal of Obesity, Journal of Nutritional Science}
+
+
+\section{Presentations}
+\begin{enumerate}[leftmargin = 2em]
+    \item \textbf{Lee MM}, Barrett J, Kenney EL, Gouck J, Cradock AL, Long MW, Ward ZJ, Rohrer B, Gortmaker SL. Impacts of a state-wide sugar-sweetened beverage excise tax in California: Projected benefits for population obesity and health equity. \textit{American Public Health Association Annual Meeting}. (2022).
+    \item \parskip 1pt Kenney EL, \textbf{Lee MM}, Barrett J, Ward ZJ, Long MW, Cradock AL, Gortmaker SL. The cost-effectiveness and health equity impacts of improved nutrition standards in WIC, and the potential for maximizing WIC’s benefits for population health. \textit{American Public Health Association Annual Meeting}. (2022).
+\end{enumerate}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% WORKS UNDER REVIEW
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \parskip -5pt 
+% \section{Works In-Progress/Under Review}
+% \begin{enumerate}[leftmargin = 2em, labelsep=1.2em]
+%     \item \parskip 1pt \noindent Zahid, N., Pulvera, R., Madsen, K.A., \textbf{Lee, M. M.}, Ibarra-Castro, A., Falbe, J. Racial, Ethnic, and Socioeconomic Disparities in Outdoor Branded Advertising in San Francisco and Oakland, California. \textit{Under Review} (2021).
+%     \item \parskip 1pt \noindent Richardson, S., Rimm, E. B., Cohen, J. F.W., Gortmaker, S. L., \textbf{Lee, M. M.} Daily Saturated Fat and Sodium Content of Elementary School Meals in a large sample of 128 geographically diverse school systems in the United States. \textit{Under Review} (2021).
+% \end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Honors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards \& Honors}
+
+\textit{Berkowitz Fellowship in Public Health} \hfill {2021}\\
+\textit{Certificate of Distinction in Teaching, Derek Bok Center for Teaching and Learning} \hfill {2021}\\
+\textit{Certificate of Distinction in Teaching, Derek Bok Center for Teaching and Learning} \hfill {2020}\\
+\textit{Simon, Arpi, and Marie Simonian Research Excellence in Nutrition Prize} \hfill {2020} \\
+\textit{Prajna Chair's Scholarship in Public Health Nutrition} \hfill 2019 \\
+\textit{Reshetko Family Scholarship} \hfill 2017
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% WORK
@@ -139,7 +194,7 @@ PI: Biljana Horn, MD; Robert Goldsby, MD
 \section{Service}
 
 % Union
-\datedsubsection{\textbf{Union Steward}}{2020-Present}
+\datedsubsection{\textbf{Union Steward}}{2020-2021}
 \textit{Harvard Graduate Student Union}
 \begin{itemize}
     \item Supported department- and university-level organizing efforts to assess student needs, gauge contract priorities, and build social support amongst incoming and continuing doctoral students in the School of Public Health. 
@@ -167,15 +222,22 @@ PI: Biljana Horn, MD; Robert Goldsby, MD
 
 \section{Skills}
 \begin{itemize}
-    \item Statistical Packages (R, Stata, SAS, Python, Stan)
-    \item \parskip 1pt Geographic Information Systems (R)
-    \item \parskip 1pt \LaTeX \ typesetting
-    \item \parskip 1pt Qualitative analysis software (Atlas.ti)
-    \item \parskip 1pt Version control (Google Drive Suite, Box, Git/Github)
-    \item \parskip 1pt Survey Design (Qualtrics, Google Forms)
-    \item \parskip 1pt Reference Management Software (Endnote, Refworks, Zotero, Mendeley)
-    \item \parskip 1pt Microsoft Office (Word, PowerPoint, Excel)
-    \item \parskip 1pt Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere, Lightroom, Bridge)
+    \item Programming languages: 
+    \begin{itemize}
+        \item Statistical analysis (R, Stata, SAS, Python, Stan)
+        \item \parskip 1pt Geographic Information Systems (R)
+        \item \parskip 1pt Typesetting (\LaTeX, R Markdown, R Sweave, Markdown) 
+        \item \parskip 1pt Presentations (react.js, R) 
+    \end{itemize}
+    \item \parskip 1pt Software: 
+    \begin{itemize}
+        \item \parskip 1pt Qualitative analysis (Atlas.ti)
+        \item \parskip 1pt Reference Management (Endnote, Refworks, Zotero, Mendeley)
+        \item \parskip 1pt Microsoft Office/Google Suite (Microsoft Word, PowerPoint, Excel; Google Docs, Sheets, Slides)
+        \item \parskip 1pt Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere, Lightroom, Bridge)
+    \end{itemize}
+    \item \parskip 1pt Version control (Git/GitHub)
+    \item \parskip 1pt Survey design (Qualtrics, Google Forms)
 \end{itemize}
 
 \end{document}
