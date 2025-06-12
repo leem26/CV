@@ -30,7 +30,7 @@
     {\Large} #4 \ {\Large} #5
 }
 
-\usepackage[letterpaper, total={7.6in, 10in}]{geometry}
+\usepackage[letterpaper, margin=0.9in]{geometry}
 \usepackage{parskip}
 \usepackage{changepage}
 \usepackage{booktabs}
